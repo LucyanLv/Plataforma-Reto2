@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/David CharacterGym.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/lvl 1.unity
+    path: Assets/Scenes/lvl 1.unity
     guid: c88ee88c518c3e94782cd981117eaeb3
   - enabled: 1
     path: Assets/lvl2.unity
     guid: 8fc9a08b9821a394c979f5718bc55be9
   - enabled: 1
-    path: Assets/lvl 3.unity
+    path: Assets/Scenes/lvl 3.unity
     guid: ef952e2a1ea965d4c81266a64d7b4bc2
   m_configObjects: {}

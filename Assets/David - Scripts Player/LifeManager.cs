@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class LifeManager: MonoBehaviour
 {
     public static int lifes = 3;
+    [SerializeField] private ScoreManager scoreManager;
     void Update()
     {
         if (lifes >= 3)
@@ -50,7 +51,10 @@ public class LifeManager: MonoBehaviour
             if (lifes == 0) 
             {
                 lifes = 3;
+                scoreManager.resetScore();
             }
+
+            
         }
     }
 }

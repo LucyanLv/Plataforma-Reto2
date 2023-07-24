@@ -88,13 +88,13 @@ public class PlayerMove: MonoBehaviour
     private void Appering()
     {
         sR.enabled = false;
-//        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
         gameObject.transform.position = new Vector3(inicioX, inicioY, 0);
         DamagePlayer.damageTime += Time.deltaTime;
         if (DamagePlayer.damageTime > 0.5f)
         {
             sR.enabled = true;
-//        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
             appearingActive = false;
             DamagePlayer.damageSignal = false;
             //DamagePlayer.Lesslife();

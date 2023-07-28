@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene: MonoBehaviour
+public class ChangeSceneA: MonoBehaviour
 {
     public int tagScene = 0;
     public void loadScene()
@@ -13,6 +13,6 @@ public class ChangeScene: MonoBehaviour
 
     public void ReloadLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

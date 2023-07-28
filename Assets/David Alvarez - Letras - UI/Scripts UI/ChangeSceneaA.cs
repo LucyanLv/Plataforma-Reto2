@@ -13,6 +13,7 @@ public class ChangeSceneA: MonoBehaviour
 
     public void ReloadLevel()
     {
+        Debug.Log("Restarting");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

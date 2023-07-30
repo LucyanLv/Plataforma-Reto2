@@ -27,13 +27,13 @@ public class PanelManager: MonoBehaviour
     }
     private void Update()
     {
-        if (AudioManager.sound)
-        {
-            audi.volume = 0.5f;
-        } else
-        {
-            audi.volume = 0;
-        }
+        //if (AudioManager.sound)
+        //{
+        //    audi.volume = 0.5f;
+        //} else
+        //{
+        //    audi.volume = 0;
+        //}
     }
 
 }

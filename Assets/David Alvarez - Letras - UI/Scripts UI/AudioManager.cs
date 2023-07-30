@@ -1,37 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.U2D;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
-using Image = UnityEngine.UI.Image;
 
 public class AudioManager : MonoBehaviour
 {
-    public static bool sound = true;
-    public Sprite soundOn;
-    public Sprite soundOff; 
-    public void SoundOn()
+    public static string soundPrefKey = "SoundPref";
+    public Image soundOnImage;
+    public Image soundOffImage;
+
+    // Inicializamos sound con true por defecto (sonido activado)
+    private static bool sound = true;
+
+    private void Start()
     {
-        gameObject.GetComponent<Image>().sprite = soundOn;
-        sound = true;
+        // Recuperar el estado del sonido de PlayerPrefs al inicio
+        sound = PlayerPrefs.GetInt(soundPrefKey, 1) == 1;
+        UpdateSoundImage();
+
+        // Llamar al método para cambiar el volumen global del audio
+        AudioListener.volume = sound ? 1.0f : 0.0f;
     }
-    public void SoundOff() 
+
+    public void ToggleSound()
     {
-        gameObject.GetComponent<Image>().sprite = soundOff;
-        sound = false;
+        sound = !sound;
+        UpdateSoundImage();
+
+        // Llamar al método para cambiar el volumen global del audio
+        AudioListener.volume = sound ? 1.0f : 0.0f;
+
+        // Guardar el estado del sonido en PlayerPrefs para mantenerlo entre escenas
+        PlayerPrefs.SetInt(soundPrefKey, sound ? 1 : 0);
+        PlayerPrefs.Save();
     }
-    public void ChangeSound()
+
+    private void UpdateSoundImage()
     {
         if (sound)
         {
-            gameObject.GetComponent<Image>().sprite = soundOff;
-            sound = false;
+            soundOnImage.gameObject.SetActive(true);
+            soundOffImage.gameObject.SetActive(false);
         }
         else
         {
-            gameObject.GetComponent<Image>().sprite = soundOn;
-            sound = true;
+            soundOnImage.gameObject.SetActive(false);
+            soundOffImage.gameObject.SetActive(true);
         }
     }
 }

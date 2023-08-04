@@ -524,11 +524,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1700343290593841047, guid: 5d91f160c746af84fb118f1af82e01c5, type: 3}
+      propertyPath: m_text
+      value: 'Created by:
+
+
+        David Alvarez - UI, Level3
+
+        Juan Pamplona
+        - Level1
+
+        Sebastian Arevalo - Level2
+
+
+        Thanks to:
+
+        ATENEA
+        - UNAL:
+
+        TODOS A LA U'
+      objectReference: {fileID: 0}
     - target: {fileID: 1700343290728417064, guid: 5d91f160c746af84fb118f1af82e01c5, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700343291268405056, guid: 5d91f160c746af84fb118f1af82e01c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700343291381396580, guid: 5d91f160c746af84fb118f1af82e01c5, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

@@ -18,7 +18,7 @@ public class SoundDisplay : MonoBehaviour
     {
         isSoundEnabled = !isSoundEnabled;
         UpdateSoundDisplay();
-        AudioListener.volume = isSoundEnabled ? 1.0f : 0.0f;
+        AudioListener.pause = !isSoundEnabled;
     }
 
     private void UpdateSoundDisplay()

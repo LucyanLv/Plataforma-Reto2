@@ -11,7 +11,7 @@ public class DamagePlayer: MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             damageSignal = true;
-            damageTime = 0f;
+            damageTime = 0.5f;
             Lesslife();
         }
     }

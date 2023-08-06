@@ -52,9 +52,7 @@ public class LifeManager: MonoBehaviour
             {
                 lifes = 3;
                 scoreManager.resetScore();
-            }
-
-            
+            }   
         }
     }
 }

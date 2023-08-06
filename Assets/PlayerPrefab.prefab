@@ -301,8 +301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumping: 2.5
-  inicioX: 0
-  inicioY: 0
+  inicioX: -8.717
+  inicioY: -3.796
 --- !u!82 &8464396406738222386
 AudioSource:
   m_ObjectHideFlags: 0
